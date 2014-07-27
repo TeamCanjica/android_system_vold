@@ -154,6 +154,8 @@ private:
     void readInitialState();
     bool isMountpointMounted(const char *mp);
     bool isAsecInDirectory(const char *dir, const char *asec) const;
+    bool isLegalAsecId(const char *id) const;
+    int openLun(int number);
 };
 
 extern "C" {
